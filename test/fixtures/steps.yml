@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  checklist_template: one
+  description: MyText
+  completed: false
+
+two:
+  checklist_template: two
+  description: MyText
+  completed: false
