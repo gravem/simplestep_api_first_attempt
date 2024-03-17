@@ -50,3 +50,7 @@ end
 # MY GEMS
 
 gem 'devise'
+gem 'devise-jwt' # adds support for JSON Web Tokens (JWT) authentication to Devise.
+gem 'jsonapi-serializer' # This gem will, that is, it will transform them into JSON:API-compliant responses.
+
+gem 'rack-cors'
