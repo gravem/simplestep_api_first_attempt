@@ -1,4 +1,4 @@
-class ChecklistTemplatesController < ApplicationController
+class Api::V1::ChecklistTemplatesController < ApplicationController
   before_action :authenticate_user!
 
   # GET / checklist_templates
@@ -7,7 +7,7 @@ class ChecklistTemplatesController < ApplicationController
     render json: @checklist_templates
   end
 
-  # GET / chechlist_templates/:id
+  # GET / checklist_templates/:id
   def show
     @checklist_template = current_user.checklist_templates.find(params[:id])
     render json: @checklist_template
