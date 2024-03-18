@@ -1,4 +1,4 @@
-class StepsController < ApplicationController
+class Api::V1::StepsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_checklist_template
 
