@@ -1,4 +1,4 @@
-import { useState } from 'react'; // google hooks later
+import { useState } from 'react'; // google react hooks later
 
 export const Login = () => {
   const handleFormSubmit = (event) => {
