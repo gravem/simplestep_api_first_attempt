@@ -28,6 +28,92 @@
   color: #61dafb;
 }
 
+.shadow {
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.05);
+}
+
+.Login-form {
+  width: 20rem;
+  margin: auto;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  display: flex;
+}
+
+.Login-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #f47c7c;
+  padding: 0.5rem 0.5rem 0 1rem;
+  margin: 0 0 1rem 0;
+  border-radius: 1.25rem 0 0 1.25rem;
+  width: 4.3rem;
+  text-align: left;
+}
+
+.Login-form input {
+  border: solid 2px #cacaca;
+  border-left: none;
+  border-radius: 0 1.25rem 1.25rem 0;
+  font-size: 1rem;
+  color: #f47c7c;
+  padding: 0.5rem 1rem;
+  margin: 0 0 1rem 0;
+  flex-grow: 2;
+}
+
+.Login-form input:focus {
+  border: solid 2px #fad4d4;
+  outline: none;
+  border-left: none;
+}
+
+.btn-pri {
+  background-color: #ffffff;
+  color: #f47c7c;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border: solid 2px #f47c7c;
+  border-radius: 2rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-pri:hover {
+  background-color: #f47c7c;
+  color: #fff;
+}
+
+.btn-pri:active {
+  background-color: #db5b5b;
+  border-color: #db5b5b;
+}
+
+.btn {
+  outline: none;
+  border: solid 2px #d1d1d1;
+  border-radius: 2rem;
+  background: #fff;
+  color: #777777;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #d1d1d1;
+  color: #777777;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
