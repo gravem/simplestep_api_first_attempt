@@ -316,7 +316,7 @@ Devise.setup do |config|
     # The secret key is retrieved from the Rails application credentials.
     jwt.secret = Rails.application.credentials.devise_jwt_secret_key!
     jwt.dispatch_requests = [
-      ['POST', %r{^/login$}]
+      ['POST', %r{^api/v1/login$}]
     ]
     # Configure the revocation requests for JWT authentication.
     # The revocation_requests variable is an array that contains HTTP methods and regular expressions.
@@ -326,9 +326,9 @@ Devise.setup do |config|
     #   - Regular expression: ^/logout$
     # This means that when a DELETE request is made to the /logout endpoint, the JWT authentication will be revoked.
     jwt.revocation_requests = [
-      ['DELETE', %r{^/logout$}]
+      ['DELETE', %r{^api/v1/logout$}]
     ]
-    # Sets the expiration time for JSON Web Tokens (JWT) to 120 minutes.
-    jwt.expiration_time = 120.minutes.to_i
+    # Sets the expiration time for JSON Web Tokens (JWT) to 60 minutes.
+    jwt.expiration_time = 60.minutes.to_i
   end
 end
